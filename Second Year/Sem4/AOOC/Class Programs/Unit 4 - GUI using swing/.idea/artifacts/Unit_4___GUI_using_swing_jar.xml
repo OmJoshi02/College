@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Unit 4 - GUI using swing:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Unit_4___GUI_using_swing_jar</output-path>
+    <root id="archive" name="Unit 4 - GUI using swing.jar">
+      <element id="module-output" name="Unit 4 - GUI using swing" />
+    </root>
+  </artifact>
+</component>
