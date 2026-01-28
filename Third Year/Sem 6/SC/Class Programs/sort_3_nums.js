@@ -1,20 +1,21 @@
-let a = 30;
-let b = 30;
-let c = 30;
+let a = 7, b = 2, c = 5;
 
-function sort(a,b,c){
-    if(a > b && a > c){
-        console.log("a is greater");
-        
-    }
-    else if(b > a && b > c){
-        console.log("b is greater");
-        
-    }
-    else{
-        console.log("C is greater");
-        
-    }
+if (a > b) {
+  a = a + b;
+  b = a - b;
+  a = a - b;
 }
 
-sort(a,b,c)
+if (a > c) {
+  a = a + c;
+  c = a - c;
+  a = a - c;
+}
+
+if (b > c) {
+  b = b + c;
+  c = b - c;
+  b = b - c;
+}
+
+console.log(a, b, c); // 2 5 7
