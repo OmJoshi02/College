@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events</title>
+</head>
+<body onclick="changeBg()">
+
+    <h2>Mouse Events Demo</h2>
+
+    <button onmouseover="showMsg()">Mouse Over Me</button>
+    <br><br>
+
+    <button ondblclick="showAlert()">Double Click Me</button>
+
+    <p id="msg"></p>
+
+    <script>
+        function changeBg() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function showMsg() {
+            document.getElementById("msg").innerText =
+                "Mouse moved over the button";
+        }
+
+        function showAlert() {
+            alert("Button double clicked!");
+        }
+    </script>
+
+</body>
+</html>
