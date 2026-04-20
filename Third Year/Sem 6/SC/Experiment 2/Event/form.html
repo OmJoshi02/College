@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form onsubmit="submitform(event)">
+        <label for="name">Name : </label>
+        <input type="text" id="name">
+        <br>
+        <label for="course">course</label>
+        <select id="course">
+            <option value="CSE">CSE</option>
+            <option value="AIML">AIML</option>
+            <option value="DS">DS</option>
+            <option value="E&TC">E&TC</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <p id="submitted"></p>
+    <script>
+
+        
+        function submitform(event){
+            event.preventDefault()
+            let name = document.getElementById('name').value
+            let course = document.getElementById('course').value
+
+            document.getElementById('submitted').innerHTML= "Form submitted <br> Name : "+name+"<br> Course : "+course;
+        }
+
+        
+    </script>
+</body>
+</html>
