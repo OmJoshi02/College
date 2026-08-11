@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  gap: 30px;
+  font-size: 30px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 30px;
+}
+
+a{
+  color: white;
+}
+
+
+.HelloClass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 100px;
+  font-size: 30px;
+}
+
+.HelloFun{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 100px;
+  font-size: 30px;
+}
